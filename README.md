@@ -1,0 +1,2 @@
+# linear_logistic_regression_and_perceptron_from_scratch
+Linear regression and perceptron from scratch
