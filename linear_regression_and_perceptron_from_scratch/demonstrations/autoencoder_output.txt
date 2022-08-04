@@ -1,0 +1,70 @@
+Reloaded modules: utils.dataLoaders, utils.preprocess, utils.splitData, utils.splitDataClassless, algorithms, algorithms.logisticRegression, algorithms.networks, algorithms.activations, algorithms.losses
+Dataset:  abalone
+Train mode:  regression
+
+******************** ML Pipeline Started ********************
+LoadCsvData Initialized
+Preprocess data initialized
+Encoded Column:  sex
+Split Data Initialized
+
+Train/Test Set:  0
+
+------ Encoder ------
+
+----- Network Summary -----
+Input Layer Size:  9
+Hidden Layer1:  4 Activation Function:  <algorithms.activations.ReLU object at 0x000001CFA757FEE0>
+Hidden Layer2:  2 Activation Function:  <algorithms.activations.Tanh object at 0x000001CFA757F5E0>
+Output Activation:  <algorithms.activations.Softmax object at 0x000001CFA757F7F0>
+Training: 100%|██████████| 150/150 [00:06<00:00, 24.04it/s]        | 12/150 [00:00<00:05, 24.44it/s]██▍       | 36/150 [00:01<00:04, 24.35it/s]
+
+------ Decoder ------
+
+----- Network Summary -----
+Input Layer Size:  2
+Hidden Layer1:  4 Activation Function:  <algorithms.activations.ReLU object at 0x000001CFA757FD60>
+Hidden Layer2:  9 Activation Function:  <algorithms.activations.Tanh object at 0x000001CFA757F670>
+Output Activation:  <algorithms.activations.Softmax object at 0x000001CFA6462250>
+Training: 100%|██████████| 150/150 [00:00<00:00, 4799.41it/s]
+
+----- Feed Forward Performance Summary -----
+MSE:  0.17417742195318867
+
+encoder.weights[0]:
+array([[ 0.1935429 ,  0.06693469,  0.36428019,  0.57622902, -0.00229373],
+       [-0.03886783,  0.46676823,  0.26041812, -0.27753361,  0.0884364 ],
+       [-0.06103344, -0.04727771, -0.04771266, -0.15710051,  0.09632204],
+       [ 0.20780609, -0.22178603,  0.3930702 ,  0.09391583,  0.17809095],
+       [ 0.53184403,  0.13955501, -0.70068155,  0.54921107, -0.47760217],
+       [ 0.48461508, -0.32609821,  0.16721612, -0.41230116,  0.05866325],
+       [ 0.48336365, -0.3703544 ,  0.44555283, -0.14800537,  0.33487195],
+       [-0.18697148,  0.48054493,  0.03174649,  0.12651069, -0.08883432],
+       [-0.31920184, -0.00433894, -0.0139287 ,  0.26330695, -0.05744976],
+       [ 0.08904574,  0.04895949, -0.6878161 ,  0.26940388, -0.20502948]])
+
+encoder.weights[1]:
+array([[ 0.00414473,  0.01176516],
+       [ 0.03283839, -0.18389925],
+       [ 0.6017889 ,  0.26924241],
+       [-0.35701608, -0.40558093],
+       [ 0.00594988,  0.14485956]])
+
+decoder.weights[0]:
+array([[ 0.10842546, -1.2162239],
+       [-0.09013807, -0.81258988],
+       [ 0.26198868, -0.30464481],
+       [ 0.77713361, -0.60827621],
+       [-0.14833754, -0.44553753]])
+
+decoder.weights[1]:
+array([[-0.30264723, -0.50536177, -0.35986576, -0.04378309, -0.32868084],
+       [-0.42802281,  0.34223903,  0.81307945,  0.22176901, -0.08238865],
+       [ 0.01688482,  0.26030606, -0.82513116, -0.41913431, -0.26494265],
+       [ 0.10898143,  0.27427327,  0.01182623, -0.52924861,  0.28575223],
+       [ 0.30214998,  0.51240495, -0.45571408,  0.3819578 ,  1.13384544],
+       [ 1.12367202,  0.2571532 , -0.56977045,  0.21475829, -0.01485887],
+       [-0.64282062, -0.15691367,  0.47624381,  0.72564027,  1.12915593],
+       [-0.03295279, -0.72865105, -0.04173121,  0.43815217,  0.39235825],
+       [ 1.28764497, -0.70803095,  0.14312937, -0.70241182, -0.45866274]])
+

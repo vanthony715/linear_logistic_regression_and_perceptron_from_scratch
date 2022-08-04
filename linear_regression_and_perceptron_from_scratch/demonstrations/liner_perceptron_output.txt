@@ -1,0 +1,19 @@
+Reloaded modules: utils.dataLoaders, utils.preprocess, utils.splitData, utils.splitDataClassless, algorithms, algorithms.logisticRegression, algorithms.networks, algorithms.activations, algorithms.losses
+Dataset:  machine
+Train mode:  regression
+
+******************** ML Pipeline Started ********************
+LoadCsvData Initialized
+Preprocess data initialized
+Split Data Initialized
+
+Train/Test Set:  4
+Perceptron Train Loop: 100%|██████████| 10/10 [00:00<00:00, 639.93it/s]
+----------Perceptron Results----------
+The Perceptron MSE is:  0.2864470487804877
+Total Time:  0.45
+
+perceptron.weights
+array([0.08827, 0.88814, 1.02379, 0.79665, 0.21479, 0.18507, 0.58451])
+
+

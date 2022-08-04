@@ -1,0 +1,20 @@
+Reloaded modules: utils.dataLoaders, utils.preprocess, utils.splitData, utils.splitDataClassless, algorithms, algorithms.logisticRegression, algorithms.networks, algorithms.activations, algorithms.losses
+Dataset:  breast-cancer-wisconsin
+Train mode:  classification
+
+******************** ML Pipeline Started ********************
+LoadCsvData Initialized
+Preprocess data initialized
+Split Data Initialized
+
+Train/Test Set:  0
+Train Loop: 100%|██████████| 100/100 [00:00<?, ?it/s]
+
+----------Logistic Results----------
+Logistic Regression Model Accuracy:  0.9926470588235294
+
+logistic.weights
+array([0.02024285, 0.03597458, 0.03485079, 0.03320166, 0.02110724,
+       0.038088  , 0.02477119, 0.03533476, 0.02185929])
+
+
